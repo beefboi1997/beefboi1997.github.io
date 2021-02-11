@@ -1,20 +1,16 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="css.css">
-    </head>
+<div class="sidebar">
+    <button class="sidebar-toggle"><i class=></i></button>
+  </div>
 
-    <div id="mySideNav" class="sidenav">
-        <a href="javascript:void(0)" class="closbtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Socials</a>
-        <a href="#">In Development</a>
-    </div>
-    <span onclick="openNav()">open</span>
-     <div id="main">
-        ...
-      </div>
-      
+  <link rel="stylesheet" href="sidebarcss.css">
 
+<script>
+  var toggleBtn = document.querySelector('.sidebar-toggle');
+var sidebar = document.querySelector('.sidebar');
 
-</html>
+toggleBtn.addEventListener('click', function() {
+  toggleBtn.classList.toggle('is-closed');
+  sidebar.classList.toggle('is-closed');
+})
+
+</script>
